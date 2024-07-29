@@ -1,0 +1,289 @@
+* {
+  /* bài 47  https://www.youtube.com/watch?v=VpybDcRVbys&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=65 */
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* =============common=========== */
+a {
+  /* làm mất gạch chân thẻ a */
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  /* làm cách 2 bên lề 24px (trừ 48 là do cộng 2 bên lề bằng 48) */
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+.btn:hover {
+  opacity: 0.9; /* làm mờ */
+  cursor: pointer;
+}
+/* ==================header================== */
+/* header {
+  background-color: red;
+} */
+.header .body-header {
+  display: flex;
+  align-items: center;
+  /* link justify-content  https://www.youtube.com/watch?v=dKmXFGP3_eo&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=113*/
+  justify-content: space-between;
+  padding: 30px 0 8px;
+}
+.header .nav ul {
+  display: flex;
+  gap: 39px;
+}
+.body-header .nav a {
+  color: #2f3a3b;
+  font-weight: 400;
+}
+.body-header .nav li.active a,
+.body-header .nav a:hover {
+  color: #2f3a3b;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .action .btn {
+  border: 1px solid transparent;
+  min-width: 108px;
+  line-height: 48px;
+  display: inline-block;
+  color: #494949;
+  text-align: center;
+  font-weight: 400;
+}
+.header .action {
+  gap: 50px;
+}
+.header .action .btn:hover {
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+}
+/* ==============hero================ */
+.hero {
+  padding: 56px 0 79px;
+}
+.hero .body-hero {
+  display: flex;
+  align-items: center;
+}
+.body-hero .content-block .desc {
+  color: #767e7e;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.body-hero .content-block .head {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
+.body-hero .content-block .desc:nth-child(3) {
+  margin-top: 46px;
+  width: 374px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78; /* 177.778% */
+}
+.body-hero .cta-group {
+  display: flex;
+  align-items: center;
+  margin-top: 52px;
+  gap: 50px;
+}
+.body-hero .cta-group .btn-get-started {
+  width: 186px;
+  line-height: 68px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.body-hero .cta-group .watch-video {
+  border: none;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+}
+.body-hero .cta-group .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+/* ==============hero right============== */
+.body-hero .media-block {
+  display: flex;
+  position: relative;
+  width: 49%;
+}
+.body-hero .media-block .images {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+}
+.body-hero .courses {
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 157px;
+  height: 75px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.body-hero .courses .book-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 36px;
+  height: 40px;
+}
+.body-hero .courses .icon {
+  width: 36px;
+  height: 40px;
+}
+.body-hero .courses .small {
+  position: absolute;
+  left: 4px;
+  bottom: 8px;
+  width: 28px;
+  height: 4px;
+}
+.body-hero .courses .desc {
+  margin-left: 16px;
+  width: 55px;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-hero .schedules {
+  position: absolute;
+  bottom: 46px;
+  left: -65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 124px;
+  height: 132px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.body-hero .crossbar {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.body-hero .schedules .desc {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-hero .students {
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+  min-width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+  padding: 17px 35px;
+}
+.body-hero .students .desc {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-hero .student-list {
+  margin-top: 8px;
+  display: flex;
+}
+.body-hero .student-list .std {
+  object-fit: cover;
+}
+
+.body-hero .student-list:not(.std1) .std {
+  margin-left: -7px;
+}
+/* ==========features=========== */
+.features {
+  margin-top: 65px;
+  padding: 65px 0;
+}
+.features-top {
+  width: 590px;
+}
+.features-top .desc {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.features-top .heading {
+  margin-top: 12px;
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.33; /* 133.333% */
+}
+.features-top .desc:nth-child(3) {
+  margin-top: 12px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.features-bt {
+  margin-top: 80px;
+}
+.features-bt .list {
+  display: flex;
+  gap: 200px;
+}
+.features-bt .list .heading {
+  margin-top: 20px;
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.features-bt .list .desc {
+  margin-top: 16px;
+  width: 168px;
+  color: #9da6a5;
+  font-weight: 400;
+  line-height: 1.69; /* 168.75% */
+}
