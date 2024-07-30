@@ -389,7 +389,8 @@ a {
 .courses-item .info .desc:last-child strong {
   display: inline-flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  margin-right: 10px;
 }
 .courses-item .info .desc:last-child strong::before {
   content: "";
@@ -398,7 +399,7 @@ a {
   height: 6px;
   border-radius: 50%;
   background-color: #1ebfc1;
-  margin: 0 10px;
+  margin-right: 10px;
 }
 /* ================parameter============= */
 .parameter {
